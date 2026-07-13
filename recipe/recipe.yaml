@@ -13,8 +13,8 @@ build:
   number: 0
   script:
     env:
-      CARGO_PROFILE_RELEASE_STRIP: symbols
       CARGO_PROFILE_RELEASE_LTO: fat
+      CARGO_PROFILE_RELEASE_STRIP: symbols
     content:
       - if: unix
         then:
@@ -28,8 +28,8 @@ requirements:
     - ${{ stdlib('c') }}
     - ${{ compiler('c') }}
     - ${{ compiler('rust') }}
-    - cargo-bundle-licenses
     - cargo-auditable
+    - cargo-bundle-licenses
 
 tests:
   - script:
