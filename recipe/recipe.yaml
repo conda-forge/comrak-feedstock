@@ -1,5 +1,5 @@
 context:
-  version: "1.1.0"
+  version: "1.2.0"
 
 package:
   name: comrak
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/kivikakk/comrak/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: bec24b69764da2f5e904503b3c27cd90720ab21e13c3ee5e09c36459ae377d27
+  sha256: b044929629fcad3ca2dfafeaccb3dfb8ea91deeae4ec10475eb7c322d1a721aa
 
 build:
   number: 0
